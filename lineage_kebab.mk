@@ -15,6 +15,24 @@ $(call inherit-product, device/oneplus/kebab/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+#GAPPS
+WITH_GMS := true
+
+# Matrixx
+MATRIXX_BUILD_TYPE := OFFICIAL
+MATRIXX_MAINTAINER := zizzyboi
+MATRIXX_CHIPSET := SM8250
+MATRIXX_BATTERY := 4500mAh
+MATRIXX_DISPLAY := 1080x2400
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_EXCLUDES_AUDIOFX := true
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
 PRODUCT_NAME := lineage_kebab
 PRODUCT_DEVICE := kebab
 PRODUCT_MANUFACTURER := OnePlus
